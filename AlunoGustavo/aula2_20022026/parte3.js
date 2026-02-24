@@ -76,5 +76,3 @@ rese.innerHTML = `O total do estoque de todos os objetos é: ${totalEstoque}.`;
 // Buscando o objeto com o maior estoque
 let objetoMaiorEstoque = objetos.reduce((maior, obj) => obj.estoque > maior.estoque ? obj : maior, objetos[0]);
 resf.innerHTML = `O objeto com o maior estoque é: ${objetoMaiorEstoque.nome} com ${objetoMaiorEstoque.estoque} unidades.`;
-
- 
