@@ -1,0 +1,9 @@
+--- 
+Infos Aluno Gabriel Goes
+Nome: Gabriel Goes de Souza Galdino
+RA: 824123004  
+Curso: Engenharia de Software
+Semestre: 5
+Bairro: Cidade Tiradentes
+Trabalha: Sim
+Objetivo: Me tornar um desenvolvedor Full Stack.
