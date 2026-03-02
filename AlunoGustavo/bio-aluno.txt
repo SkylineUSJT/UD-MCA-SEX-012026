@@ -1,0 +1,7 @@
+Nome: Gustavo Rodrigues
+RA: 824210367
+Curso: Engenharia de Software
+Semestre: 5
+Bairro: Jardim Santa Terezinha
+Trabalha: Não
+Objetivo: Me tornar um desenvolvedor Full Stack.
