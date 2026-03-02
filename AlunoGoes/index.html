@@ -1,24 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing page para atividades">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing page para atividades" />
     <title>MCA</title>
-</head>
-<body>
-    <div id="container" class="container" name="container"></div>
-        <div id="header" class="header" name="header">
-            <h1>Aluno: Gabriel Goes de Souza Galdino</h1>
-            <p>RA: 824213004 | Email: 824123004@ulife.com</p>
+    <meta name="author" content="Gabriel Goes de Souza Galdino" />
+    <meta name="keywords" content="HTML, CSS, Atividades, MCA" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <script src="./src/js/script.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div id="container" class="container" name="container">
+      <div id="header" class="header" name="header">
+        <img src="./src/img/perfil.jpg" alt="FotoPerfil" class="img-perfil" />
+        <div class="header-text">
+          <h1>Gabriel Goes de Souza Galdino</h1>
+          <button id="btn-dark-mode" class="btn-dark-mode" title="Alternar modo escuro">🌙</button>
+          <p>
+            RA: 824213004 | Email: 824123004@ulife.com & gabrielgaldino205@Outlook.com
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/gabrielgoesdev/"
+              target="_blank"
+              ><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+            /></a>
+            <a href="https://github.com/srgoes" target="_blank"
+              ><img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+            /></a>
+          </div>
         </div>
-        <div id="Quadro" class="Quadro" name="Quadro">
-            <h1>Atividades</h1>
-            <ul>
-                <li>Atividade 1 - Somente Crianção de branch e adição de informações sobre o aluno!</li>
-                <li><a href="./aula2_20022026/index.html">Atividade 2 - Manipulando arrays e objetos</a></li>
-            </ul>
-        </div>
+      </div>
+      <div class="main-content-grid">
+        <aside id="section-ativ" class="section-ativ" name="Quadro Atividades">
+          <h1>Atividades</h1>
+          <div class="atividades-lista">
+
+            <!-- Padrão COM link: usa <a> com card-atividade-link -->
+            <a href="https://github.com/SkylineUSJT/UD-MCA-SEX-012026/tree/aluno-Goes" class="card-atividade card-atividade-link" target="_blank">
+              <span>Atividade 1</span>
+              <p>Criação de branch e adição de informações sobre o aluno</p>
+              <div class="card-link-detail"></div>
+            </a>
+
+            <!-- Padrão COM link: usa <a> com card-atividade-link -->
+            <a href="./aula2_20022026/index.html" class="card-atividade card-atividade-link">
+              <span>Atividade 2</span>
+              <p>Manipulando arrays e objetos</p>
+              <div class="card-link-detail"></div>
+            </a>
+
+            <!-- Padrão SEM link: usa <div> com card-atividade -->
+            <div class="card-atividade">
+              <span>Atividade 3</span>
+              <p>Criação de uma página html e css se apresentando <b>(Essa página!)</b></p>
+            </div>
+
+          </div>
+        </aside>
+        <main id="body" class="body" name="body">
+          <section class="section">
+            <h1>Sobre</h1>
+            <p>
+              Meu nome é Gabriel Goes de Souza Galdino, tenho 21 anos e sou
+              estudante do curso de Engenharia de Software na Universidade São
+              Judas Tadeu. Tenho interesse em tecnologia, programação e
+              desenvolvimento de software. Estou animado para aprender mais sobre
+              essas áreas e desenvolver minhas habilidades ao longo do curso.<br /><b
+                >Não gosto de front!</b
+              >
+            </p>
+
+            <h2>Habilidades</h2>
+            <p>
+              Desenvolvedor Back-End em formação, focado em criar soluções
+              eficientes e aprender constantemente.<br />
+              Linguagens: PHP, Java, TypeScript, JavaScript.<br />
+              Banco de Dados: MySQL, SQL.<br />
+              Ferramentas: Git, VS Code.<br />
+            </p>
+
+            <h2>Projetos</h2>
+            <p>
+              <b>Arca Bot:</b> Bot da Corporação ARCA (<a
+                href="https://github.com/SrGoes/arca-bot"
+                target="_blank"
+                >GitHub</a
+              >)<br />
+              <b>TalkTech:</b> Plataforma de comunicação para tecnologia (<a
+                href="https://github.com/CosmosEtec/TalkTech"
+                target="_blank"
+                >GitHub</a
+              >)
+            </p>
+
+            <h2>Experiências</h2>
+            <div class="exp-eletromidia">
+              <div class="logo-eletromidia-bg">
+                <img
+                  src="./src/img/logo-eletromidia-horizontal.png"
+                  alt="Logo Eletromidia"
+                  class="logo-eletromidia"
+                />
+              </div>
+              <div>
+                <b>Eletromidia</b> — Estagiário de Dados<br />
+                Empresa líder em mídia digital out-of-home no Brasil, atuando em
+                ambientes urbanos, transportes, edifícios comerciais e
+                residenciais.<br />
+                Foco em Engenharia de Software, análise de dados e automação de
+                processos internos.
+              </div>
+            </div>
+            <h2>Interesses</h2>
+            <p>
+              Inteligência Artificial, Desenvolvimento de Jogos, Automação,
+              Aprendizado contínuo e novas tecnologias. <br>Sempre buscando aprimorar
+              minhas habilidades técnicas e de resolução de problemas.
+            </p>
+          </section>
+        </main>
+      </div>
     </div>
-</body>
+  </body>
 </html>
