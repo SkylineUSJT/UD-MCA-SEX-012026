@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Reset e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Layout geral */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.img-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 32px;
+    object-fit: cover;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-links img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Grid principal */
+.main-content-grid {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 32px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Atividades lateral */
+.section-ativ {
+    height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    padding: 24px 18px;
+    width: 100%;
+    max-width: 340px;
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.atividades-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+}
+
+.card-atividade,
+a.card-atividade {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.12);
+    padding: 18px;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.27, 1.55), box-shadow 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+.card-atividade:hover,
+a.card-atividade:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(44, 62, 80, 0.18);
+    text-decoration: none;
+}
+
+/* Detalhe visual para cards com link */
+.card-atividade-link .card-link-detail {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    border-radius: 12px 0 0 12px;
+    background: linear-gradient(180deg, #ff8000 60%, #ffb000 100%);
+    content: '';
+}
+
+/* Conteúdo principal */
+.body {
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    padding: 20px 28px;
+    word-break: break-word;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.section h2 {
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-size: 1.4em;
+}
+
+/* Botão dark mode */
+.btn-dark-mode {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(44,62,80,0.10);
+}
+.btn-dark-mode:hover {
+    transform: scale(1.12);
+    background: #e0e0e0;
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #111;
+    color: #f0f0f0;
+}
+body.dark .section,
+body.dark .section-ativ {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+body.dark .card-atividade,
+body.dark a.card-atividade {
+    background: #2a2a2a;
+    color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+body.dark .btn-dark-mode {
+    background: #2a2a2a;
+    border-color: #555;
+    color: #f0f0f0;
+}
+body.dark .btn-dark-mode:hover {
+    background: #3a3a3a;
+}
+body.dark .social-links img {
+    filter: invert(1);
+}
+
+/* Experiência Eletromidia */
+.exp-eletromidia {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 8px;
+}
+
+.logo-eletromidia-bg {
+    background: #ff8000;
+    border-radius: 12px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    min-height: 64px;
+}
+
+.logo-eletromidia {
+    height: 48px;
+    width: auto;
+    border-radius: 6px;
+    background: none;
+    box-shadow: none;
+}
+
+/* ===== RESPONSIVO MOBILE ===== */
+@media (max-width: 768px) {
+    body {
+        overflow: auto;
+        height: auto;
+    }
+
+    .container {
+        height: auto;
+        min-height: 100vh;
+        padding: 16px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .img-perfil {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
+    .header-text h1 {
+        font-size: 1.4em;
+    }
+
+    .header-text p {
+        font-size: 0.8em;
+        word-break: break-word;
+    }
+
+    .btn-dark-mode {
+        top: 12px;
+        right: 12px;
+        width: 34px;
+        height: 34px;
+        font-size: 1em;
+    }
+
+    .main-content-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        overflow: visible;
+    }
+
+    .section-ativ {
+        height: auto;
+        max-height: 320px;
+        max-width: 100%;
+        overflow-y: auto;
+    }
+
+    .body {
+        overflow: visible;
+        height: auto;
+    }
+
+    .section {
+        height: auto;
+        overflow: visible;
+        padding: 16px;
+    }
+
+    .exp-eletromidia {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
