@@ -1,0 +1,332 @@
+/* =========================================
+   Tema Minimalista (Estilo Next.js / Vercel)
+   ========================================= */
+   :root {
+    /* TEMA CLARO */
+    --bg-color: #fafafa;
+    --card-bg: #ffffff;
+    --text-main: #09090b;
+    --text-muted: #71717a;
+    --border-color: #e4e4e7;
+    --accent: #18181b;
+    --accent-hover: #3b82f6;
+    --radius: 12px;
+    --transition: all 0.2s ease;
+  }
+  
+  body.dark-mode {
+    /* TEMA ESCURO (Foco principal) */
+    --bg-color: #09090b; /* Preto quase total */
+    --card-bg: #121214;  /* Fundo dos cards levemente descolado do fundo */
+    --text-main: #f4f4f5;
+    --text-muted: #a1a1aa;
+    --border-color: #27272a;
+    --accent: #ffffff;
+    --accent-hover: #60a5fa;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif; /* A fonte dos devs */
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased; /* Deixa a fonte mais suave no navegador */
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--accent);
+    transition: var(--transition);
+  }
+  
+  a:hover {
+    color: var(--accent-hover);
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  /* =========================================
+     Cabeçalho (Header)
+     ========================================= */
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .img-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    padding: 4px;
+    background-color: var(--bg-color);
+  }
+  
+  .header-text h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.05em; /* Letras levemente mais juntas */
+    margin-bottom: 5px;
+  }
+  
+  .header-text p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  
+  /* Controles */
+  .top-controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .control-btn {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .control-btn:hover {
+    border-color: var(--text-main);
+    color: var(--text-main);
+  }
+  
+  /* Redes Sociais */
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-links a img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.5;
+    transition: var(--transition);
+  }
+  
+  .social-links a:hover img {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+  
+  body.dark-mode .social-links a img {
+    filter: invert(1);
+  }
+  
+  /* =========================================
+     Layout Principal
+     ========================================= */
+  .main-content-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 50px;
+    align-items: start;
+  }
+  
+  /* =========================================
+     Atividades (Barra Lateral)
+     ========================================= */
+  .section-ativ h1 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+  
+  .atividades-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .card-atividade {
+    background-color: transparent;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+  }
+  
+  .card-atividade span {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .card-atividade p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  
+  .card-atividade-link:hover {
+    border-color: var(--text-muted);
+    background-color: var(--card-bg);
+  }
+  
+  /* =========================================
+     Conteúdo (Sobre, Experiências...)
+     ========================================= */
+  .body {
+    /* Removemos a caixa de fundo para o texto respirar melhor */
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  .section h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+    color: var(--text-main);
+  }
+  
+  .section h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Linha fina ao lado dos títulos H2 */
+  .section h2::after {
+    content: '';
+    height: 1px;
+    flex: 1;
+    background-color: var(--border-color);
+    margin-left: 15px;
+  }
+  
+  .section p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+  }
+  
+  /* =========================================
+     Pílulas de Habilidades (Tags)
+     ========================================= */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .skill-badge {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .skill-badge:hover {
+    border-color: var(--text-main);
+  }
+  
+  /* =========================================
+     Responsividade
+     ========================================= */
+  @media (max-width: 768px) {
+    .main-content-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .header {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 60px;
+    }
+    
+    .top-controls {
+      right: 50%;
+      transform: translateX(50%);
+    }
+    
+    .social-links {
+      justify-content: center;
+    }
+  }
+
+  /* =========================================
+   Grid de Projetos
+   ========================================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: var(--transition);
+  }
+  
+  .project-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    flex-grow: 1; /* Empurra as tags para o fundo do cartão */
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  
+  .project-card:hover {
+    border-color: var(--text-main);
+    background-color: var(--card-bg);
+    transform: translateY(-2px);
+  }

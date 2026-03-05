@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Landing page para atividades" />
+    <title>MCA</title>
+    <meta name="author" content="Gabriel Goes de Souza Galdino" />
+    <meta name="keywords" content="HTML, CSS, Atividades, MCA" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div id="container" class="container" name="container">
+        <div id="header" class="header" name="header">
+            <img src="https://lh3.googleusercontent.com/a/ACg8ocIaCAS9mkmg3g27D0R_E29DW94mkiOdlZMp5oZFoMYEHtLn4pdy=s288-c-no" alt="FotoPerfil" class="img-perfil" />
+            <div class="header-text">
+              <h1>César Melo Ribeiro</h1>
+              
+              <div class="top-controls">
+                <button id="btn-lang" class="control-btn" title="Mudar Idioma">EN</button>
+                <button id="btn-dark-mode" class="control-btn" title="Alternar modo escuro">🌙</button>
+              </div>
+    
+              <p>RA: 82413280 | Email: 82413280@ulife.com & cesinhasimpsonribeiro@gmail.com</p>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/cesarm-ribeiro" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" alt="LinkedIn"/>
+                </a>
+                <a href="https://github.com/CesarmRibeiro" target="_blank">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"/>
+                </a>
+              </div>
+            </div>
+          </div>
+      <div class="main-content-grid">
+        <aside id="section-ativ" class="section-ativ" name="Quadro Atividades">
+          <h1>Atividades</h1>
+          <div class="atividades-lista">
+
+            <!-- Padrão COM link: usa <a> com card-atividade-link -->
+            <a href="https://github.com/SkylineUSJT/UD-MCA-SEX-012026/tree/aluno-Goes" class="card-atividade card-atividade-link" target="_blank">
+              <span>Atividade 1</span>
+              <p>Criação de branch e adição de informações sobre o aluno</p>
+              <div class="card-link-detail"></div>
+            </a>
+
+            <!-- Padrão COM link: usa <a> com card-atividade-link -->
+            <a href="./aula2_20022026/index.html" class="card-atividade card-atividade-link">
+              <span>Atividade 2</span>
+              <p>Manipulando arrays e objetos</p>
+              <div class="card-link-detail"></div>
+            </a>
+
+            <!-- Padrão SEM link: usa <div> com card-atividade -->
+            <div class="card-atividade">
+              <span>Atividade 3</span>
+              <p>Criação de uma página html e css se apresentando <b>(Essa página!)</b></p>
+            </div>
+
+          </div>
+        </aside>
+        <main id="body" class="body" name="body">
+          <section class="section">
+            <h1>Sobre</h1>
+            <p>
+              Meu nome é César Melo Ribeiro, tenho 21 anos e sou
+              estudante do curso de Engenharia de Software na Universidade São
+              Judas Tadeu. Tenho interesse em tecnologia, programação e
+              desenvolvimento de software. Estou animado para aprender mais sobre
+              essas áreas e desenvolver minhas habilidades ao longo do curso.<br />
+            </p>
+
+            <h2>Habilidades</h2>
+            <p>
+                Desenvolvedor Back-End em formação, focado em criar soluções eficientes e aprender constantemente.
+              </p>
+              <div class="skills-container">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Git</span>
+              </div>
+
+              <h2 id="title-projects">Projetos</h2>
+              <div class="projects-grid">
+                
+                <a href="#" class="project-card" target="_blank">
+                  <h3 id="proj1-title">Skyline A3 (Automação IoT)</h3>
+                  <p id="proj1-desc">
+                    Sistema IoT desenvolvido para automatizar o acionamento (ligar/desligar) dos PCs dos funcionários de forma sincronizada com o registro de ponto (clock in/out), integrando Front-end, Back-end e Banco de Dados.
+                  </p>
+                  <div class="skills-container">
+                    <span class="skill-badge">IoT</span>
+                    <span class="skill-badge">Back-end</span>
+                    <span class="skill-badge">Banco de Dados</span>
+                  </div>
+                </a>
+              
+                <a href="#" class="project-card" target="_blank">
+                  <h3 id="proj2-title">Dashboards de Geração de Leads</h3>
+                  <p id="proj2-desc">
+                    Criação e refinamento de queries SQL e dashboards visuais no Databricks para análise de dados de geração de leads, permitindo o acompanhamento de taxas de aprovação e TPV.
+                  </p>
+                  <div class="skills-container">
+                    <span class="skill-badge">Databricks</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Data Visualization</span>
+                  </div>
+                </a>
+              
+              </div>
+
+            <h2>Experiências</h2>
+
+            </div>
+            <h2>Interesses</h2>
+            <p>
+              Inteligência Artificial, Banco de dados , Automação,
+              Aprendizado contínuo e novas tecnologias. <br>Sempre buscando aprimorar
+              minhas habilidades técnicas e de resolução de problemas.
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
